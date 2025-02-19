@@ -1,0 +1,27 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows10.0.22621.0": {},
+    "net8.0-windows10.0.22621.0/win-x64": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0-windows10.0.22621.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\rudol\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\rudol\\source\\repos\\Screenshot_2_WpfApp\\Screenshot_2_WpfApp\\Screenshot_2_WpfApp.csproj",
+      "projectPath": "C:\\Users\\rudol\\source\\repos\\Screenshot_2_WpfApp\\Screenshot_2_WpfApp\\Screenshot_2_WpfApp.csproj"
+    },
+    "frameworks": {
+      "net8.0-windows10.0.22621.0": {
+        "targetAlias": "net8.0-windows10.0.22621.0",
+        "projectReferences": {}
+      }
+    }
+  }
+}
