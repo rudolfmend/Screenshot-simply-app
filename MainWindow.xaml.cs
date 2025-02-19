@@ -2,6 +2,11 @@
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System;
+using System.Threading.Tasks;
+using System.Windows.Threading;
+using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows;
 using System.Windows.Forms;
 using MessageBox = System.Windows.MessageBox;
@@ -37,7 +42,7 @@ namespace Screenshot_2_WpfApp
                 {
                     this.WindowState = WindowState.Normal; // Restore window first
                     MessageBox.Show(this,
-                        "Nepodarilo sa nájsť primárnu obrazovku.", "Chyba",
+                        "Unable to find primary screen.", "Error",
                         MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
@@ -72,17 +77,108 @@ namespace Screenshot_2_WpfApp
                         System.Media.SystemSounds.Asterisk.Play();
                     }
 
-                    // Restore window first
+                    // The window will be refreshed first
                     this.WindowState = WindowState.Normal;
                     this.Activate(); // Ensure the window is active
                     this.Focus();    // Ensure the window has focus
 
-                    // Then show message box
-                    MessageBox.Show(this,
-                        "Screenshot was successfully saved.",
-                        "Success",
-                        MessageBoxButton.OK,
-                        MessageBoxImage.Information);
+                    // custom non-modal MessageBox and auto-close
+                    var messageWindow = new System.Windows.Window
+                    {
+                        Title = "Success",
+                        Width = 340,
+                        Height = 240,
+                        WindowStartupLocation = WindowStartupLocation.CenterOwner,
+                        Owner = this,
+                        ResizeMode = ResizeMode.NoResize,
+                        ShowInTaskbar = false,
+                        WindowStyle = WindowStyle.ToolWindow
+                    };
+
+                    var messagePanel = new System.Windows.Controls.StackPanel
+                    {
+                        Margin = new Thickness(20)
+                    };
+
+                    var messageText = new System.Windows.Controls.TextBlock
+                    {
+                        Text = "Screenshot was successfully saved.",
+                        TextWrapping = TextWrapping.Wrap,
+                        HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
+                        VerticalAlignment = System.Windows.VerticalAlignment.Center,
+                        Margin = new Thickness(0, 10, 0, 0) // Zmenšil som spodný okraj
+                    };
+
+                    // TextBlock for countdown
+                    var countdownText = new System.Windows.Controls.TextBlock
+                    {
+                        Text = "The window will close in 5 seconds.",
+                        HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
+                        Margin = new Thickness(0, 5, 0, 20),
+                        FontSize = 11,
+                        Foreground = System.Windows.Media.Brushes.Gray
+                    };
+
+                    var okButton = new System.Windows.Controls.Button
+                    {
+                        Content = "OK",
+                        Width = 180,
+                        Height = 48,
+                        HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
+                    };
+
+                    // Rounded button style
+                    var buttonStyle = new System.Windows.Style(typeof(System.Windows.Controls.Button));
+                    var buttonTemplate = new System.Windows.Controls.ControlTemplate(typeof(System.Windows.Controls.Button));
+
+                    // Rounded border
+                    var border = new System.Windows.FrameworkElementFactory(typeof(System.Windows.Controls.Border));
+                    border.SetValue(System.Windows.Controls.Border.CornerRadiusProperty, new System.Windows.CornerRadius(8));
+                    border.SetValue(System.Windows.Controls.Border.BackgroundProperty, System.Windows.SystemColors.ControlBrush);
+
+                    // Content of button (ContentPresenter)
+                    var contentPresenter = new System.Windows.FrameworkElementFactory(typeof(System.Windows.Controls.ContentPresenter));
+                    contentPresenter.SetValue(System.Windows.Controls.ContentPresenter.HorizontalAlignmentProperty, System.Windows.HorizontalAlignment.Center);
+                    contentPresenter.SetValue(System.Windows.Controls.ContentPresenter.VerticalAlignmentProperty, System.Windows.VerticalAlignment.Center);
+                    border.AppendChild(contentPresenter);
+
+                    buttonTemplate.VisualTree = border;
+                    buttonStyle.Setters.Add(new System.Windows.Setter(System.Windows.Controls.Control.TemplateProperty, buttonTemplate));
+                    okButton.Style = buttonStyle;
+
+                    okButton.Click += (s, args) => messageWindow.Close();
+
+                    // Add controls to the panel
+                    messagePanel.Children.Add(messageText);
+                    messagePanel.Children.Add(countdownText);
+                    messagePanel.Children.Add(okButton);
+                    messageWindow.Content = messagePanel;
+
+                    // Seconds counter
+                    int secondsLeft = 5;
+
+                    // countdown timer
+                    var autoCloseTimer = new System.Windows.Threading.DispatcherTimer
+                    {
+                        Interval = TimeSpan.FromSeconds(1)
+                    };
+                    autoCloseTimer.Tick += (s, args) =>
+                    {
+                        secondsLeft--;
+                        if (secondsLeft <= 0)
+                        {
+                            autoCloseTimer.Stop();
+                            messageWindow.Close();
+                        }
+                        else
+                        {
+                            // Update countdown text
+                            countdownText.Text = $"The window will close in {secondsLeft} {(secondsLeft == 1 ? "second" : (secondsLeft > 1 && secondsLeft < 5 ? "seconds" : "seconds"))}";
+                        }
+                    };
+                    autoCloseTimer.Start();
+
+                    messageWindow.Show();
                 }
             }
             catch (Exception ex)
@@ -99,7 +195,7 @@ namespace Screenshot_2_WpfApp
             }
         }
 
-        // Pomocná metóda pre získanie JPEG encodera
+        // Auxiliary method for obtaining a JPEG encoder
         private ImageCodecInfo GetEncoderInfo(string mimeType)
         {
             var codecs = ImageCodecInfo.GetImageEncoders();
@@ -130,8 +226,8 @@ namespace Screenshot_2_WpfApp
             {
                 MessageBox.Show(
                     this,
-                    $"Chyba pri otváraní priečinka: {ex.Message}",
-                    "Chyba",
+                    $"Error opening folder: {ex.Message}",
+                    "Error",
                     MessageBoxButton.OK,
                     MessageBoxImage.Error);
             }

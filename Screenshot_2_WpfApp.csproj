@@ -10,7 +10,7 @@
     <SupportedOSPlatformVersion>10.0.22621.0</SupportedOSPlatformVersion>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
-    <Platforms>AnyCPU;ARM32</Platforms>
+    <Platforms>AnyCPU;ARM32;x64</Platforms>
   </PropertyGroup>
   
   <ItemGroup>
