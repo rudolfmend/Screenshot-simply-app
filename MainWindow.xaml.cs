@@ -86,7 +86,7 @@ namespace Screenshot_2_WpfApp
                     var messageWindow = new System.Windows.Window
                     {
                         Title = "Success",
-                        Width = 340,
+                        Width = 380,
                         Height = 240,
                         WindowStartupLocation = WindowStartupLocation.CenterOwner,
                         Owner = this,
@@ -106,7 +106,8 @@ namespace Screenshot_2_WpfApp
                         TextWrapping = TextWrapping.Wrap,
                         HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
                         VerticalAlignment = System.Windows.VerticalAlignment.Center,
-                        Margin = new Thickness(0, 10, 0, 0) // Zmenšil som spodný okraj
+                        Margin = new Thickness(0, 10, 0, 0),
+                        FontSize = 20
                     };
 
                     // TextBlock for countdown
@@ -115,7 +116,7 @@ namespace Screenshot_2_WpfApp
                         Text = "The window will close in 5 seconds.",
                         HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
                         Margin = new Thickness(0, 5, 0, 20),
-                        FontSize = 11,
+                        FontSize = 16,
                         Foreground = System.Windows.Media.Brushes.Gray
                     };
 
