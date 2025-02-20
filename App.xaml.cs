@@ -8,8 +8,9 @@ namespace Screenshot_2_WpfApp
 {
     public partial class App : Application
     {
-        [DllImport("user32.dll")]
-        private static extern bool SetProcessDpiAwarenessContext(int dpiFlag);
+        [LibraryImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static partial bool SetProcessDpiAwarenessContext(int dpiFlag);
 
         private const int DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2 = -4;
 

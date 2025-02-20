@@ -28,3 +28,4 @@ C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\obj\Release\
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\obj\Release\net8.0-windows10.0.22621.0\Screenshot_2_WpfApp.pdb
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\obj\Release\net8.0-windows10.0.22621.0\Screenshot_2_WpfApp.genruntimeconfig.cache
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\obj\Release\net8.0-windows10.0.22621.0\ref\Screenshot_2_WpfApp.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\obj\Release\net8.0-windows10.0.22621.0\Screenshot_2_WpfApp.sourcelink.json

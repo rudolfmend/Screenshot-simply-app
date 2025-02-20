@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Screenshot_2_WpfApp"
         mc:Ignorable="d"
-        Title="Screenshot simply app" Height="470" Width="360" 
+        Title="Screenshot simply app" Height="600" Width="400" 
         Background="White" Icon="/ScreenshotApp.png">
 
     <Grid x:Name="MainGrid" Cursor="Arrow" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
@@ -16,8 +16,8 @@
             <ColumnDefinition Width="170*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel x:Name="ButtonsStackPanel" Margin="0" Background="White" Opacity="1" Grid.ColumnSpan="4">
-                <Menu Background="Transparent" HorizontalAlignment="Left" Width="300">
+        <StackPanel x:Name="ButtonsStackPanel" Margin="0,0,0,1" Background="White" Opacity="1" Grid.ColumnSpan="4">
+            <Menu Background="Transparent" HorizontalAlignment="Left" Width="300">
                 <MenuItem Header="About App" FontSize="18" BorderBrush="Black" BorderThickness="0 0 0 1.25" Height="auto" Width="auto">
                     <Separator/>
                     <MenuItem x:Name="AboutMenuItem" Header="About App" Click="AboutMenuItem_Click"/>
@@ -192,6 +192,16 @@
                     </Style>
                 </Button.Style>
             </Button>
+            <Label Content="Keyboard shortcuts for :" Margin="5"/>
+
+            <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Right" Width="225">
+                <Run Text="Capture - Shift + C" />
+                <LineBreak/>
+                <Run Text="Settings - Shift + S" />
+                <LineBreak/>
+                <Run Text="Open Folder - Shift + F" />
+            </TextBlock>
+
         </StackPanel>
     </Grid>
 </Window>
