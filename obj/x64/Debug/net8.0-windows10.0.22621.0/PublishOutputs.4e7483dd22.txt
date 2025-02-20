@@ -1,0 +1,11 @@
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\Screenshot_2_WpfApp.exe
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\Screenshot_2_WpfApp.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\Screenshot_2_WpfApp.runtimeconfig.json
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\Screenshot_2_WpfApp.pdb
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\Microsoft.Windows.SDK.NET.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\WinRT.Runtime.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\Microsoft.Win32.SystemEvents.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\System.Drawing.Common.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\System.Private.Windows.Core.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\x64\Debug\net8.0-windows10.0.22621.0\publish\Screenshot_2_WpfApp.deps.json

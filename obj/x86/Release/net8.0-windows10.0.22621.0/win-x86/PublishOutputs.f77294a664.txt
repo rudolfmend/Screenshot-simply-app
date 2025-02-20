@@ -172,7 +172,6 @@ C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\Microsoft.VisualBasic.Forms.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\Microsoft.VisualBasic.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\Microsoft.Win32.Registry.AccessControl.dll
-C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\Microsoft.Win32.SystemEvents.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\PresentationCore.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\PresentationFramework-SystemCore.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\PresentationFramework-SystemData.dll
@@ -195,7 +194,6 @@ C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\System.Diagnostics.EventLog.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\System.Diagnostics.PerformanceCounter.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\System.DirectoryServices.dll
-C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\System.Drawing.Common.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\System.Drawing.Design.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\System.Drawing.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\System.IO.Packaging.dll
@@ -463,5 +461,7 @@ C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\zh-Hant\WindowsFormsIntegration.resources.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\Microsoft.Windows.SDK.NET.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\WinRT.Runtime.dll
-C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\CommunityToolkit.WinUI.Notifications.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\Microsoft.Win32.SystemEvents.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\System.Drawing.Common.dll
+C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\System.Private.Windows.Core.dll
 C:\Users\rudol\source\repos\Screenshot_2_WpfApp\Screenshot_2_WpfApp\bin\Release\net8.0-windows10.0.22621.0\win-x86\msixpublish\Screenshot_2_WpfApp.deps.json
